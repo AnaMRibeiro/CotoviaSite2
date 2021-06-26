@@ -162,3 +162,8 @@ C:\Users\Ana\Desktop\LEI\TI2\CotoviaSite\CotoviaSite2\CotoviaSite2\CotoviaSite2\
 C:\Users\Ana\Desktop\LEI\TI2\CotoviaSite\CotoviaSite2\CotoviaSite2\CotoviaSite2\obj\Debug\net5.0\Razor\Views\Noticias\Details.cshtml.g.cs
 C:\Users\Ana\Desktop\LEI\TI2\CotoviaSite\CotoviaSite2\CotoviaSite2\CotoviaSite2\obj\Debug\net5.0\Razor\Views\Noticias\Edit.cshtml.g.cs
 C:\Users\Ana\Desktop\LEI\TI2\CotoviaSite\CotoviaSite2\CotoviaSite2\CotoviaSite2\obj\Debug\net5.0\Razor\Views\Noticias\Index.cshtml.g.cs
+C:\Users\Ana\Desktop\LEI\TI2\CotoviaSite\CotoviaSite2\CotoviaSite2\CotoviaSite2\obj\Debug\net5.0\Razor\Views\Fotografias\Create.cshtml.g.cs
+C:\Users\Ana\Desktop\LEI\TI2\CotoviaSite\CotoviaSite2\CotoviaSite2\CotoviaSite2\obj\Debug\net5.0\Razor\Views\Fotografias\Delete.cshtml.g.cs
+C:\Users\Ana\Desktop\LEI\TI2\CotoviaSite\CotoviaSite2\CotoviaSite2\CotoviaSite2\obj\Debug\net5.0\Razor\Views\Fotografias\Details.cshtml.g.cs
+C:\Users\Ana\Desktop\LEI\TI2\CotoviaSite\CotoviaSite2\CotoviaSite2\CotoviaSite2\obj\Debug\net5.0\Razor\Views\Fotografias\Edit.cshtml.g.cs
+C:\Users\Ana\Desktop\LEI\TI2\CotoviaSite\CotoviaSite2\CotoviaSite2\CotoviaSite2\obj\Debug\net5.0\Razor\Views\Fotografias\Index.cshtml.g.cs

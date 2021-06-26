@@ -15,5 +15,7 @@ namespace CotoviaSite2.Data
             Database.EnsureCreated();
         }
         public DbSet<CotoviaSite2.Models.Noticias> Noticias { get; set; }
+        public DbSet<CotoviaSite2.Models.Fotografias> Fotografias { get; set; }
+        public DbSet<CotoviaSite2.Models.Utilizadores> Utilizadores { get; set; }
     }
 }

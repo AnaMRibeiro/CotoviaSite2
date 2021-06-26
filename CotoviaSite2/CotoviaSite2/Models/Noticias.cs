@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -33,21 +34,25 @@ namespace CotoviaSite2.Models
         [Required]
         public string Conteudo { get; set; }
 
-        //[Required]
+        [Required]
         public Estado Estado { get; set; }
 
-        //[Required]
+        [Required]
         public Tema Tema { get; set; }
 
-        /*public virtual ICollection<FotosNoticias> ListaFotografias { get; set; }
+        //public virtual ICollection<FotosNoticias> ListaFotografias { get; set; }
 
+        
         [ForeignKey(nameof(Autor))]
         public int AutorFK { get; set; }
+        [NotMapped]
         public virtual Utilizadores Autor { get; set; }
 
+        
         [ForeignKey(nameof(Revisor))]
         public int RevisorFK { get; set; }
-        public virtual Utilizadores Revisor { get; set; }*/
+        [NotMapped]
+        public virtual Utilizadores Revisor { get; set; }
     }
 
     public enum Estado
