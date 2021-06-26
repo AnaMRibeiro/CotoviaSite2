@@ -48,6 +48,10 @@ namespace CotoviaSite2.Controllers
         {
             return View();
         }
+        public IActionResult Ambiente()
+        {
+            return View();
+        }
 
         // POST: Noticias/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.

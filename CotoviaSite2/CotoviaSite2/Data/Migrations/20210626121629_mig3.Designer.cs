@@ -4,14 +4,16 @@ using CotoviaSite2.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CotoviaSite2.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210626121629_mig3")]
+    partial class mig3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -257,7 +259,7 @@ namespace CotoviaSite2.Data.Migrations
                             Estado = 0,
                             Resumo = "Resumo 2",
                             RevisorFK = 1,
-                            Tema = 4,
+                            Tema = 0,
                             Titulo = "Titulo 2"
                         },
                         new
@@ -266,10 +268,10 @@ namespace CotoviaSite2.Data.Migrations
                             AutorFK = 2,
                             Conteudo = "Conteudo 3",
                             Data = new DateTime(2021, 2, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Estado = 1,
+                            Estado = 0,
                             Resumo = "Resumo 3",
                             RevisorFK = 2,
-                            Tema = 2,
+                            Tema = 0,
                             Titulo = "Titulo 3"
                         },
                         new
@@ -281,7 +283,7 @@ namespace CotoviaSite2.Data.Migrations
                             Estado = 0,
                             Resumo = "Resumo 4",
                             RevisorFK = 1,
-                            Tema = 6,
+                            Tema = 0,
                             Titulo = "Titulo 4"
                         },
                         new
@@ -293,7 +295,7 @@ namespace CotoviaSite2.Data.Migrations
                             Estado = 0,
                             Resumo = "Resumo 5",
                             RevisorFK = 3,
-                            Tema = 1,
+                            Tema = 0,
                             Titulo = "Titulo 5"
                         },
                         new
@@ -302,10 +304,10 @@ namespace CotoviaSite2.Data.Migrations
                             AutorFK = 3,
                             Conteudo = "Conteudo 6",
                             Data = new DateTime(2021, 2, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Estado = 1,
+                            Estado = 0,
                             Resumo = "Resumo 6",
                             RevisorFK = 1,
-                            Tema = 3,
+                            Tema = 0,
                             Titulo = "Titulo 6"
                         },
                         new
@@ -317,7 +319,7 @@ namespace CotoviaSite2.Data.Migrations
                             Estado = 0,
                             Resumo = "Resumo 7",
                             RevisorFK = 3,
-                            Tema = 5,
+                            Tema = 0,
                             Titulo = "Titulo 7"
                         },
                         new
@@ -326,10 +328,10 @@ namespace CotoviaSite2.Data.Migrations
                             AutorFK = 5,
                             Conteudo = "Conteudo 8",
                             Data = new DateTime(2021, 2, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Estado = 1,
+                            Estado = 0,
                             Resumo = "Resumo 8",
                             RevisorFK = 3,
-                            Tema = 2,
+                            Tema = 0,
                             Titulo = "Titulo 8"
                         },
                         new
@@ -338,10 +340,10 @@ namespace CotoviaSite2.Data.Migrations
                             AutorFK = 1,
                             Conteudo = "Conteudo 9",
                             Data = new DateTime(2021, 2, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Estado = 1,
+                            Estado = 0,
                             Resumo = "Resumo 9",
                             RevisorFK = 2,
-                            Tema = 7,
+                            Tema = 0,
                             Titulo = "Titulo 9"
                         },
                         new
@@ -350,10 +352,10 @@ namespace CotoviaSite2.Data.Migrations
                             AutorFK = 2,
                             Conteudo = "Conteudo 10",
                             Data = new DateTime(2021, 2, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Estado = 1,
+                            Estado = 0,
                             Resumo = "Resumo 10",
                             RevisorFK = 3,
-                            Tema = 8,
+                            Tema = 0,
                             Titulo = "Titulo 10"
                         });
                 });
