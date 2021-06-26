@@ -7,16 +7,22 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CotoviaSite2.Data;
 using CotoviaSite2.Models;
+using Microsoft.AspNetCore.Http;
+using System.IO;
+using Microsoft.AspNetCore.Hosting;
 
 namespace CotoviaSite2.Controllers
 {
     public class UtilizadoresController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly IWebHostEnvironment _path;
 
-        public UtilizadoresController(ApplicationDbContext context)
+
+        public UtilizadoresController(ApplicationDbContext context, IWebHostEnvironment path)
         {
             _context = context;
+            _path = path;
         }
 
         // GET: Utilizadores
@@ -54,15 +60,50 @@ namespace CotoviaSite2.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Nome,Email,Foto")] Utilizadores utilizadores)
+        public async Task<IActionResult> Create([Bind("ID,Nome,Email")] Utilizadores utilizador, IFormFile Foto)
         {
+            if (Foto == null)
+            {
+
+                ModelState.AddModelError("", "you haven't choose a file. Please, pick one...");
+                // send the control to Browser
+                ViewData["Utilizadores"] = new SelectList(_context.Utilizadores.OrderBy(d => d.Nome), "Id", "Name");
+                return View();
+            }
+
+            if (Foto.ContentType != "image/jpeg" && Foto.ContentType != "image/png")
+            {
+
+                ModelState.AddModelError("", "Your file is not of correct type. Please, choose PNG or JPG image...");
+
+                ViewData["Utilizadores"] = new SelectList(_context.Utilizadores.OrderBy(d => d.Nome), "Id", "Name");
+                return View();
+            }
+
+            Guid g;
+            g = Guid.NewGuid();
+
+            string extension = Path.GetExtension(Foto.FileName).ToLower();
+
+            string nameOfFile = "" + g.ToString() + extension;
+
+
             if (ModelState.IsValid)
             {
-                _context.Add(utilizadores);
+                utilizador.Foto = nameOfFile;
+                string whereToStoreTheFile = _path.WebRootPath;
+                nameOfFile = Path.Combine(whereToStoreTheFile, "fotos", nameOfFile);
+
+                using var stream = new FileStream(nameOfFile, FileMode.Create);
+                await Foto.CopyToAsync(stream);
+
+                
+                _context.Add(utilizador);
                 await _context.SaveChangesAsync();
+
                 return RedirectToAction(nameof(Index));
             }
-            return View(utilizadores);
+            return View(utilizador);
         }
 
         // GET: Utilizadores/Edit/5

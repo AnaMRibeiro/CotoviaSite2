@@ -12,7 +12,7 @@ namespace CotoviaSite2.Models
         public Fotografias()
         {
             //inicializar a lista de noticias
-            //ListaNoticias = new HashSet<FotosNoticias>();
+            ListaNoticias = new HashSet<FotosNoticias>();
         }
 
         [Key]
@@ -29,6 +29,6 @@ namespace CotoviaSite2.Models
         public Utilizadores Autor { get; set; }
 
 
-        //public virtual ICollection<FotosNoticias> ListaNoticias { get; set; }
+        public virtual ICollection<FotosNoticias> ListaNoticias { get; set; }
     }
 }
