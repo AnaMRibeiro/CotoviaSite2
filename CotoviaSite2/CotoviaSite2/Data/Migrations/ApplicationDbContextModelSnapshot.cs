@@ -365,6 +365,9 @@ namespace CotoviaSite2.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("Cargo")
+                        .HasColumnType("int");
+
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -384,6 +387,7 @@ namespace CotoviaSite2.Data.Migrations
                         new
                         {
                             ID = 1,
+                            Cargo = 0,
                             Email = "a2101@cotovia.pt",
                             Foto = "C:/Imagens/A_Mendonca_A.jpg",
                             Nome = "Álvaro Mendonça"
@@ -391,6 +395,7 @@ namespace CotoviaSite2.Data.Migrations
                         new
                         {
                             ID = 2,
+                            Cargo = 0,
                             Email = "a2004@cotovia.pt",
                             Foto = "C:/Imagens/C_Domingues_A.jpg",
                             Nome = "Cátia Domingues"
@@ -398,6 +403,7 @@ namespace CotoviaSite2.Data.Migrations
                         new
                         {
                             ID = 3,
+                            Cargo = 1,
                             Email = "a2003@cotovia.pt",
                             Foto = "C:/Imagens/F_Lopes_A.jpg",
                             Nome = "Francisco Lopes"
@@ -405,6 +411,7 @@ namespace CotoviaSite2.Data.Migrations
                         new
                         {
                             ID = 4,
+                            Cargo = 0,
                             Email = "a2002@cotovia.pt",
                             Foto = "C:/Imagens/N_Faria_A.jpg",
                             Nome = "Nuno Faria"
@@ -412,6 +419,7 @@ namespace CotoviaSite2.Data.Migrations
                         new
                         {
                             ID = 5,
+                            Cargo = 1,
                             Email = "a2001@cotovia.pt",
                             Foto = "C:/Imagens/I_Pereira_A.jpg",
                             Nome = "Inês Pereira"

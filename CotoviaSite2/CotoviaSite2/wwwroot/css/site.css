@@ -82,3 +82,13 @@ body {
     text-align: center;
     border: ridge 2px;
 }
+
+.titulo{
+    font-size: 80px;
+    font-family: Garamond;
+}
+
+.subtitulo{
+    font-size: 40px;
+    font-family: Garamond;
+}

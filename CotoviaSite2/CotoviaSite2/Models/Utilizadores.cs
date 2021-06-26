@@ -30,7 +30,16 @@ namespace CotoviaSite2.Models
         //[Required]
         public string Foto { get; set; }
 
+        [Required]
+        public Cargo Cargo { get; set; }
+
         public virtual ICollection<Noticias> ListaNoticiasEscritas { get; set; }
         public virtual ICollection<Noticias> ListaNoticiasRevistas { get; set; }
+    }
+
+    public enum Cargo
+    {
+        Autor,
+        Revisor
     }
 }

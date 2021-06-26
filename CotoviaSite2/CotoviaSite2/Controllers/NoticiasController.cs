@@ -52,6 +52,38 @@ namespace CotoviaSite2.Controllers
         {
             return View();
         }
+        public IActionResult Ciencia()
+        {
+            return View();
+        }
+        public IActionResult Cultura()
+        {
+            return View();
+        }
+        public IActionResult Desporto()
+        {
+            return View();
+        }
+        public IActionResult Economia()
+        {
+            return View();
+        }
+        public IActionResult Opiniao()
+        {
+            return View();
+        }
+        public IActionResult Politica()
+        {
+            return View();
+        }
+        public IActionResult Saude()
+        {
+            return View();
+        }
+        public IActionResult Tecnologia()
+        {
+            return View();
+        }
 
         // POST: Noticias/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
