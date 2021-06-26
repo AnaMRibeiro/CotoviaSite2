@@ -22,8 +22,4 @@
     <Folder Include="wwwroot\fotos\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <TypeScriptCompile Include=".gitignore" />
-  </ItemGroup>
-
 </Project>

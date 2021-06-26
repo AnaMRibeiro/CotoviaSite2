@@ -7493,24 +7493,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Diogo\\.nuget\\packages\\": {},
-    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Ana\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Diogo\\Desktop\\Computador\\aulas\\ti2\\CotoviaSite\\CotoviaSite2\\CotoviaSite2\\CotoviaSite2\\CotoviaSite2.csproj",
+      "projectUniqueName": "C:\\Users\\Ana\\Desktop\\LEI\\TI2\\CotoviaSite\\CotoviaSite2\\CotoviaSite2\\CotoviaSite2\\CotoviaSite2.csproj",
       "projectName": "CotoviaSite2",
-      "projectPath": "C:\\Users\\Diogo\\Desktop\\Computador\\aulas\\ti2\\CotoviaSite\\CotoviaSite2\\CotoviaSite2\\CotoviaSite2\\CotoviaSite2.csproj",
-      "packagesPath": "C:\\Users\\Diogo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Diogo\\Desktop\\Computador\\aulas\\ti2\\CotoviaSite\\CotoviaSite2\\CotoviaSite2\\CotoviaSite2\\obj\\",
+      "projectPath": "C:\\Users\\Ana\\Desktop\\LEI\\TI2\\CotoviaSite\\CotoviaSite2\\CotoviaSite2\\CotoviaSite2\\CotoviaSite2.csproj",
+      "packagesPath": "C:\\Users\\Ana\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ana\\Desktop\\LEI\\TI2\\CotoviaSite\\CotoviaSite2\\CotoviaSite2\\CotoviaSite2\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Diogo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Ana\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7579,7 +7574,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
